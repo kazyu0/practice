@@ -4,7 +4,9 @@
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    int radius;
+    radius = 5;
+    System.out.println(radius * radius * 3.14);
   }
 
   // @Test
