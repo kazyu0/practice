@@ -1,18 +1,15 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
 
-// import org.junit.jupiter.api.Test;
-
-public class Main {
+class Main {
   public static void main(String[] args) {
-    System.out.println(1000 + 2000);
-    System.out.println(3000 - 1500);
-    System.out.println(50 * 40);
-    System.out.println(600 / 15);
-    System.out.println(5 % 2);
-  }
+    int[] scores;
+    scores = new int[3];
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+    scores[0] = 1;
+    scores[1] = 5;
+    scores[2] = 10;
+
+    System.out.println(scores[0]);
+    System.out.println(scores[1]);
+    System.out.println(scores[2]);
+  }
 }
