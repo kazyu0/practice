@@ -1,10 +1,14 @@
-class Main {
-  public static void main(String[] args) {  
-    var answer = square(5);
-    System.out.println(answer);
-    }
+package in.techcamp.issueapp;
 
-    public static int square(int number){
-    return number * number;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+@Controller
+public class IssueController {
+
+    @GetMapping("/issueForm")
+    public String showIssueForm(@ModelAttribute("issueForm") IssueForm form){
+        return "issueForm";
     }
 }
